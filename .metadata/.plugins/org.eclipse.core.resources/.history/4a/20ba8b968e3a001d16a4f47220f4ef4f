@@ -1,0 +1,52 @@
+package pacticePrograms;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MergeSimilarItems {
+
+	/*
+	 * Input: items1 = [[1,1],[4,5],[3,8]], items2 = [[3,1],[1,5]] Output:
+	 * [[1,6],[3,9],[4,5]]
+	 */
+
+	public List<List<Integer>> mergeSimilarItems(int[][] items1, int[][] items2) {
+
+		List<Integer> list = new ArrayList<Integer>();
+		List<List<Integer>> finList = new ArrayList<List<Integer>>();
+		for (int i = 0; i < items1.length; i++) {
+			int count=0;
+			int[] arr = items1[i];
+			for (int j = 0; j < items2.length; j++) {
+				
+				int[] arr2 = items2[j];
+				
+				if (arr[0] == arr2[0]) {
+					int sum = arr[1] + arr2[1];
+					list.add(arr[0]);
+					list.add(sum);
+					count++;
+				}
+			}
+			if(count==0) {
+				list.add(arr[0]);
+	        list.add(arr[1]);
+	        }
+			finList.add(list);
+
+		}
+
+		return finList;
+
+	}
+	
+	public static void main(String[] args) {
+		MergeSimilarItems items=new MergeSimilarItems();
+		
+		int[][] items1 = {{1,1},{4,5},{3,8}};
+		int [][] items2 = {{3,1},{1,5}};
+		
+		
+		System.out.println(items.mergeSimilarItems(items1, items2));
+	}
+}

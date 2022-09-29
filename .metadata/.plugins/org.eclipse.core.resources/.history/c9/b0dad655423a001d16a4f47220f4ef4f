@@ -1,0 +1,53 @@
+package exam;
+
+public class ConsequancNo {
+
+	public static void conNo(int[] a) {
+		/*
+		 * 
+		 * int[] arr2=new int[arr.length]; int j=0; for (int i = 0; i < arr.length; i++)
+		 * {
+		 * 
+		 * int first=arr[i]; int Second=arr[i+1];
+		 * 
+		 * if (first<Second) {
+		 * 
+		 * arr2[j]=first; arr2[j+1]=Second;
+		 * 
+		 * 
+		 * j++;
+		 * 
+		 * }
+		 * 
+		 * }
+		 * 
+		 */
+		
+
+	    for(int i=0;i<a.length;i++){
+	        int count=0;
+	        int first=0;
+
+	    /*  System.out.println(i);*/
+	        first=a[i];
+
+	        if(a[i+1]-a[i]==1){
+
+	            count++;
+
+	            int last=a[i]+count;
+	            i++;
+	            System.out.println(first + " " + last);
+
+	                }else{
+
+
+	                System.out.println(a[i]);
+
+	                }
+
+	    }
+	}
+
+}
+

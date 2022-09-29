@@ -1,0 +1,41 @@
+package collection;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
+
+public class LinkedListExmp {
+	
+	public List<String> linkListM(){
+	
+	List<String> linkList= new LinkedList<String>();
+	
+	linkList.add("ajay");
+	linkList.add("amara");
+	linkList.add("bhavani");
+	linkList.add("chinnodu");
+	return linkList;
+	}
+	public static void main(String[] args) {
+		
+		LinkedListExmp ll=new LinkedListExmp();
+		
+	List<String> lll  =ll.linkListM();
+	
+	ListIterator<String> lisitr=lll.listIterator();
+	
+	while(lisitr.hasNext()) {
+		
+		System.out.println(lisitr.next());
+		
+		
+	}
+	
+	while(lisitr.hasPrevious()) {
+		System.out.println(lisitr.previous());
+		
+	}
+	}
+
+}

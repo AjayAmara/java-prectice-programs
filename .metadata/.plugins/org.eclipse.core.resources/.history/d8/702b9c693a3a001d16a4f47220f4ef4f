@@ -1,0 +1,55 @@
+package exam;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class SmallestEvenInArray {
+	
+	
+	public static void SmallestEven(int[] arr) {
+		
+		int[] evenNums=new int[arr.length];
+		
+		/*
+		 * for(int k=0;k<evenNums.length;k++) { System.out.println(arr[k]); }
+		 */
+		
+		for (int i = 0; i < arr.length; i++) {
+
+         if(arr[i]%2==0) {
+        	 int j=0;
+        	 evenNums[j]=arr[i];
+        	 j++;
+         }
+		}
+		Arrays.sort(evenNums);
+		for(int k=0;k<evenNums.length;k++) {
+		System.out.println(evenNums[k]);
+		}
+		System.out.println(  evenNums[0]+ " is the smallest even in an array");
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * int[] arr= {10,15,8,20,30,40,50}; SmallestEven(arr);
+		 */
+		int[] arr1= {1,2,3};
+		int[] arr2= {1,2,3};
+		
+		if (arr1==arr2) {
+			System.out.println("same");
+		}
+		else {
+			System.out.println("not same");
+		}
+		
+		
+		
+		
+	}
+
+}

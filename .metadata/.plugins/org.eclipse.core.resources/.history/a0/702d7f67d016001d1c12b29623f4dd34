@@ -1,0 +1,28 @@
+package collection;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class LinkedListExmp {
+	
+	public LinkedList<String> linkListM(){
+	
+	LinkedList<String> linkList= new LinkedList<String>();
+	
+	linkList.add("ajay");
+	linkList.add("amara");
+	linkList.add("bhavani");
+	linkList.add("chinnodu");
+	return linkList;
+	}
+	public static void main(String[] args) {
+		
+		LinkedListExmp ll=new LinkedListExmp();
+		
+	LinkedList<String> lll  =ll.linkListM();
+	
+	lll.i
+		
+	}
+
+}

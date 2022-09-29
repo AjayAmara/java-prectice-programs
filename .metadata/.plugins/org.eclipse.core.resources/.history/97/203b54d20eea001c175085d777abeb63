@@ -1,0 +1,26 @@
+package exam;
+
+public class Students {
+	
+	public static void main(String[] args) {
+		int students=4,temp;
+		int[] totalMarks= {12,23,32,34};
+		int sortedStudents=2;
+		
+		  for (int i = 0; i < totalMarks.length; i++) {     
+	            for (int j = i+1; j < totalMarks.length; j++) {     
+	               if(totalMarks[i] < totalMarks[j]) {    
+	                   temp = totalMarks[i];    
+	                   totalMarks[i] = totalMarks[j];    
+	                   totalMarks[j] = temp;    
+	               }     
+	            }     
+	        }    
+		
+	for(int i=0;i<=sortedStudents-1;i++) {
+		System.out.println(totalMarks[i]);
+	}
+		
+	}
+
+}

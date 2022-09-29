@@ -1,0 +1,43 @@
+package exam;
+
+public class findSumOSmallAndLarg {
+	
+	public static void main(String[] args) {
+		
+		int size=4;
+		int[] arr= {1,2,3,4};
+		int bigNo = 0,smlNo=0;
+		
+		
+		for(int i=0;i<size-1;i++) {
+			
+			if(arr[i]>arr[i+1]) {
+				
+				System.out.println(arr[i]);
+				
+				 bigNo=arr[i];
+			}else {
+				bigNo=arr[i+1];
+			}
+			
+			
+		}
+		System.out.println(bigNo);
+for(int i=0;i<size-1;i++) {
+			
+			if(arr[i]<smlNo) {
+				
+				System.out.println(arr[i]);
+				
+				 smlNo=arr[i];
+			}else {
+				smlNo=arr[i+1];
+			}
+			
+			
+		}
+System.out.println(smlNo);
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package exam;
+
+public class RevOfArrY {
+	
+public  static void rev(int[] arr) {
+		
+	int[] revArray=new int[ arr.length];
+	
+	}
+
+}

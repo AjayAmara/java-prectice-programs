@@ -1,0 +1,51 @@
+package pacticePrograms;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class Checking {
+	
+	public static void main(String[] args) {
+		
+	//	Date date=new Date(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH);
+		
+	/*
+	 * Date date=new Date();
+	 * 
+	 * String str=date.toString();
+	 * 
+	 * System.out.println(str);
+	 * System.out.println(Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
+	 */
+		
+		List<Integer> es=new ArrayList<>();
+		
+		Set<Integer> set=new HashSet<Integer>();
+		
+		es.add(1);
+		es.add(4);
+		es.add(3);
+		es.add(2);
+		
+		set.add(1);
+		set.add(4);
+		set.add(3);
+		set.add(2);
+		/*
+		 * System.out.print("list : " + es); System.out.println();
+		 * System.out.println("set : " + set);
+		 */
+		
+		String str="ajay";
+		
+		System.out.println(Math.abs(-2343345));
+		
+		
+		
+	}
+
+}

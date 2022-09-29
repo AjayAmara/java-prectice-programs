@@ -1,0 +1,8 @@
+package exam;
+
+public class ConsequancNo {
+
+	public static void counting(int[] arr) {
+
+	}
+}

@@ -1,0 +1,10 @@
+package leetCode;
+
+public class NumbersWithRepeatedDigits {
+	public int numDupDigitsAtMostN(int n) {
+
+		return n;
+
+	}
+
+}

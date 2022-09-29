@@ -1,0 +1,31 @@
+package leetCode;
+
+public class NumbersWithRepeatedDigits {
+	public int numDupDigitsAtMostN(int n) {
+   int numCount=0;
+   
+		for(int i=1;i<=n;i++) {
+			int digitCount=0;
+			int num=i;
+			int[] arr=new int[10];
+			int j=0;
+			while(num>0) {
+                 arr[j++]=i%10;
+                 num=num/10;
+			}
+			for(int k=0;k<arr.length-1;k++) {
+				for(int l=k+1;l<arr.length;l++) {
+					if(arr[i]==arr[j]) {
+						digitCount++;
+					}
+				}
+			}if(digitCount!=0) {
+				numCount++;
+			}
+			
+		}
+		return numCount;
+
+	}
+
+}

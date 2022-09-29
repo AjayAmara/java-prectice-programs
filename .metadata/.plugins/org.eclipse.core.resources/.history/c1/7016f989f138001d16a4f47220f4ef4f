@@ -1,0 +1,15 @@
+package pacticePrograms;
+
+public class MergingOfSortedArrys {
+	
+	public static void main(String[] args) {
+		
+		int[] arr1= {1,3,4,5};
+		int[] arr2= {2,3,6,7};
+		int[] resArr=new int[arr1.length+arr2.length-2];
+		
+		System.out.println(resArr.length);
+		
+	}
+
+}

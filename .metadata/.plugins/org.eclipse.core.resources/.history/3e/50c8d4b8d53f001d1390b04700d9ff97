@@ -1,0 +1,28 @@
+package exam;
+
+public class CarRace {
+	
+	public int carRaceexp(int initD,int D1,int D2) {
+		
+		int firstD=initD+D1;
+		int sumD1=initD+D1;
+		int sumD2=D2;
+		int itrCount=1;
+		while(sumD1>=sumD2) {
+			
+			sumD1+=D1;
+			sumD2+=D2;
+			itrCount++;
+			
+		}
+	
+		return itrCount;
+		
+	}
+	public static void main(String[] args) {
+		CarRace carRace =new CarRace();
+		
+		System.out.println(carRace.carRaceexp(15, 2, 12));
+	}
+
+}

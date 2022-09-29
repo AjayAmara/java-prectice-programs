@@ -1,0 +1,39 @@
+package leetCode;
+
+public class TwoSum {
+	
+	public int[] twoSum(int[] arr,int target) {
+		/*
+		 * Input: nums = [3,2,4], target = 6
+		 * Output: [1,2]
+		 */
+		int[] twoSumArr=new int[2];
+		for(int i=0;i<arr.length-1;i++) {
+     
+			for(int j=i+1;j<arr.length;j++) {
+              
+				if(arr[i]+arr[j]==target){
+					twoSumArr[0]=i;
+					twoSumArr[1]=j;
+				}
+				
+			}
+			
+		}
+		
+		return twoSumArr ;
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		TwoSum sum=new TwoSum();
+		
+		int[] arr= {3,2,4};
+		int[] arr1= sum.twoSum(arr, 6);
+		for(int i=0;i<2;i++) {
+		System.out.println(arr1[i]);
+		}
+	}
+
+}

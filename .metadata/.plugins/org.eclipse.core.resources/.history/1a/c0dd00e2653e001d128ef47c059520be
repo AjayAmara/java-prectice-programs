@@ -1,0 +1,68 @@
+package leetCode;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class LongestSubStringWithOutRptng {
+	/*
+	 *     MY APPROCH
+	 * 
+	 * public int lengthOfLongestSubstring(String s) {
+	 * 
+	 * if (isAllUnique(s)) { return s.length(); } else { String ms = ""; for (int i
+	 * = 0; i < s.length()-1; i++) { String ss = "" + s.charAt(i); for (int j = i +
+	 * 1; j <s.length(); j++) { String ss1 = ss + s.charAt(j); if (isAllUnique(ss1))
+	 * { ss = ss1;
+	 * 
+	 * } else j=s.length()-1; if (ss.length() > ms.length()) { ms = ss; }
+	 * 
+	 * } } return ms.length(); }
+	 * 
+	 * }
+	 * 
+	 * private boolean isAllUnique(String s) { int count = 0; for (int i = 0; i <
+	 * s.length() - 1; i++) { for (int j = i + 1; j < s.length(); j++) { if
+	 * (s.charAt(i) == s.charAt(j)) { count++; } if(count!=0) i= s.length() - 2;
+	 * 
+	 * 
+	 * } }
+	 * 
+	 * return count == 0; }
+	 */
+	
+	 public int lengthOfLongestSubstring(String s) {
+		 
+		 Map<Character, Integer> mapObj=new HashMap<Character, Integer>();
+		 
+		 int left=0;
+		 int right=0;
+		 
+		 int res=0;
+		 while (right<s.length()) {
+			 
+			 char r=s.charAt(right);
+			 mapObj.put(r,mapObj.getOrDefault(r, 0)+1);
+			 if(mapObj.get(r)>1) {
+				 char l=s.charAt(left);
+				 mapObj.put(l, mapObj.get(l)-1);
+				 left++;
+				 
+			 }
+			 
+			 res=Math.max(res, right-left+1);
+			 
+			 right++;
+			 
+			
+		}
+		 
+		 return res;
+		 
+	 }
+	public static void main(String[] args) {
+
+		LongestSubStringWithOutRptng outRptng = new LongestSubStringWithOutRptng();
+
+		System.out.println(outRptng.lengthOfLongestSubstring("ajay"));
+	}
+}

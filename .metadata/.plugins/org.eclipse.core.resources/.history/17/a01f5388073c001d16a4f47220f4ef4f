@@ -1,0 +1,22 @@
+package pacticePrograms;
+
+public class WithOutSemiColon {
+	
+	public static void main(String[] args) {
+		if(System.out.printf("helo.....")== null) {
+			
+		}
+		StringBuilder builder=new StringBuilder();
+	
+		builder.append("ajay");
+		builder.append("amara");
+		
+		System.out.println(builder);
+		
+			String binaryString="1010";
+			int decimal=Integer.parseInt(binaryString,3);
+			System.out.println(decimal);
+			
+	}
+
+}

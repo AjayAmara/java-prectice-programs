@@ -1,0 +1,48 @@
+package collection;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
+
+public class LinkedListExmp {
+	
+	public List<String> linkListM(){
+	
+	List<String> linkList= new LinkedList<String>();
+	
+	linkList.add("ajay");
+	linkList.add("amara");
+	linkList.add("bhavani");
+	linkList.add("chinnodu");
+	return linkList;
+	}
+	public static void main(String[] args) {
+		int N=22;
+		
+		 if(6<=N && N<=20){
+	            System.out.println("weird");
+	        }else if(N/2==0){
+	            System.out.println("not weird");
+	        }else System.out.println("weird");
+	        
+		
+		
+		LinkedListExmp ll=new LinkedListExmp();
+		
+	List<String> lll  =ll.linkListM();
+	
+	ListIterator<String> lisitr=lll.listIterator();
+	
+
+	
+	while(lisitr.hasNext()) {
+		
+		System.out.println(lisitr.next());
+		
+		 
+		                                  
+	}
+	}
+
+}

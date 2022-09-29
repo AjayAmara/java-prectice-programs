@@ -1,0 +1,15 @@
+package pacticePrograms;
+
+public class WithOutSemiColon {
+	
+	public static void main(String[] args) {
+		if(System.out.printf("helo.....")== null) {
+			
+		}
+		
+		System.out.println("hi iam from ln");
+		System.out.printf("%d",3.45);
+		
+	}
+
+}

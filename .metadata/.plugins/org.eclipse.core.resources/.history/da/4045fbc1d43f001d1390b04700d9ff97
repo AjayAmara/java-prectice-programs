@@ -1,0 +1,27 @@
+package exam;
+
+public class CarRace {
+	
+	public int carRaceexp(int initD,int D1,int D2) {
+		
+		//int firstD=initD+D1;
+		int sumD1=initD+D1;
+		int sumD2=D2;
+		int itrCount=0;
+		/*
+		 * do { itrCount++; }
+		 */
+		while(sumD1<sumD2) {
+			
+			
+		}
+		
+		
+		
+		
+		
+		return 0;
+		
+	}
+
+}

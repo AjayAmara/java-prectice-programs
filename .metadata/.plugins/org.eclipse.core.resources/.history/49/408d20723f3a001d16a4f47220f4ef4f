@@ -1,0 +1,10 @@
+package exam;
+
+public class RevOfArrY {
+	
+public  static void counting(int[] arr) {
+		
+	
+	}
+
+}

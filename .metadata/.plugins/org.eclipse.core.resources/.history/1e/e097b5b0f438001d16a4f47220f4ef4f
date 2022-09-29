@@ -1,0 +1,28 @@
+package pacticePrograms;
+
+import java.util.Arrays;
+
+public class MergingOfSortedArrys {
+	
+	public static void main(String[] args) {
+		
+		int[] arr1= {1,3,4,5};
+		int[] arr2= {2,3,6,7};
+		int[] resArr=new int[arr1.length+arr2.length];
+		
+		System.arraycopy(arr1, 0, resArr, 0, arr1.length);  
+		System.arraycopy(arr2, 0, resArr, arr1.length,arr2.length); 
+		
+		
+		
+		Arrays.sort(resArr);
+		
+		for(int i=0;i<resArr.length;i++) {
+			System.out.println(resArr[i]);
+			}
+		
+		
+		
+	}
+
+}

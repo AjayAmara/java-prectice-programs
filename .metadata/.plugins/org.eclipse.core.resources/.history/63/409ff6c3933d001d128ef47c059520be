@@ -1,0 +1,26 @@
+package pacticePrograms;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
+public class Checking {
+	
+	public static void main(String[] args) {
+		
+	//	Date date=new Date(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH);
+		
+	/*
+	 * Date date=new Date();
+	 * 
+	 * String str=date.toString();
+	 * 
+	 * System.out.println(str);
+	 * System.out.println(Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
+	 */
+		
+		List<Integer> es=new ArrayList<>();
+	}
+
+}

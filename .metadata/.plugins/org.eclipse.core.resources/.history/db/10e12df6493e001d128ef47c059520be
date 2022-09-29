@@ -1,0 +1,51 @@
+package leetCode;
+
+public class LongestSubStringWithOutRptng {
+
+	public String lengthOfLongestSubstring(String s) {
+
+		if (isAllUnique(s)) {
+			return s;
+		}else {
+			String ms="";
+			for(int i=0;i<s.length()-1;i++) {
+				String ss=""+s.charAt(i);
+				for(int j=i+1;j<s.length();j++) {
+					String ss1=ss+s.charAt(j);
+					if(isAllUnique(ss1)) {
+						ss=ss1;
+					}else {
+						if(ss.length()>ms.length()) {
+							ms=ss;
+						}
+					}
+				}
+			}
+			return ms;
+		}
+
+
+	}
+
+	private boolean isAllUnique(String s) {
+		int count = 0;
+		for (int i = 0; i < s.length() - 1; i++) {
+			for (int j = i + 1; j < s.length(); j++) {
+				if (s.charAt(i) == s.charAt(j)) {
+					count++;
+				}
+
+			}
+		}
+
+		return count == 0;
+	}
+	
+	public static void main(String[] args) {
+		
+		LongestSubStringWithOutRptng outRptng=new LongestSubStringWithOutRptng();
+		
+		
+		System.out.println(outRptng.lengthOfLongestSubstring("ajay"));
+	}
+}
